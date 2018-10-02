@@ -20,44 +20,56 @@
       margin:0;
       font-weight: normal;
     }
-    .row{
-      clear: both;
-    }
-    .col-md-1{
-      float: left;
-      width: 33%;
-      padding: 2%;
-
-      box-sizing: border-box;
-    }
-
-    .img-responsive{
-      max-width: 100%;
-    }
-    @media (max-width: 480px;){
-      .col-md-1{
-        width: 100%;  
+    @media (max-width: 480px){
+      .col-sm-1{
+        width: 70%;
+        padding: 2%;
+        margin: 30px auto;
+        box-sizing: border-box;
+      }
+      h1{
+        font-size: 10vh;
+      }
+      p{
+        font-size: 4vh;
       }
     }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Hola!!<br>Este es un ejercicio de grillas</h1>
-  </header>
-  <div class="row">
-    <div class="col-md-1">
-      <img src="images/img5.jpg" class="img-responsive" alt="Dont Touch">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit accusamus omnis necessitatibus quod consequuntur molestiae, molestias ipsa dolore, culpa, dolorum quos praesentium voluptatibus ipsum!</p>
+      .img-responsive{
+      width: 100%;
+    }
+    @media (min-width: 481px){
+      .row{
+        clear: both;
+      }
+      .col-md-1{
+        float: left;
+        width: 33%;
+        padding: 2%;
+        box-sizing: border-box;
+      }
+      .img-responsive{
+        max-width: 100%;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hola!!<br>Este es un ejercicio de grillas</h1>
+    </header>
+    <div class="row">
+      <div class="col-md-1 col-sm-1">
+        <img src="images/img5.jpg" class="img-responsive" alt="Dont Touch">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit accusamus omnis necessitatibus quod consequuntur molestiae, molestias ipsa dolore, culpa, dolorum quos praesentium voluptatibus ipsum!</p>
+      </div>
+      <div class="col-md-1 col-sm-1">
+        <img src="images/img5.jpg" class="img-responsive" alt="Dont Touch">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit accusamus omnis necessitatibus quod consequuntur molestiae, molestias ipsa dolore, culpa, dolorum quos praesentium voluptatibus ipsum!</p>
+      </div>
+      <div class="col-md-1 col-sm-1">
+        <img src="images/img5.jpg" class="img-responsive" alt="Dont Touch">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit accusamus omnis necessitatibus quod consequuntur molestiae, molestias ipsa dolore, culpa, dolorum quos praesentium voluptatibus ipsum!</p>
+      </div>
     </div>
-    <div class="col-md-1">
-      <img src="images/img5.jpg" class="img-responsive" alt="Dont Touch">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit accusamus omnis necessitatibus quod consequuntur molestiae, molestias ipsa dolore, culpa, dolorum quos praesentium voluptatibus ipsum!</p>
-    </div>
-    <div class="col-md-1">
-      <img src="images/img5.jpg" class="img-responsive" alt="Dont Touch">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit accusamus omnis necessitatibus quod consequuntur molestiae, molestias ipsa dolore, culpa, dolorum quos praesentium voluptatibus ipsum!</p>
-    </div>
-  </div>
-</body>
-</html>
+  </body>
+  </html>
